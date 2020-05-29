@@ -1,0 +1,140 @@
+body {
+  margin: 0px;
+  -webkit-user-select: none;
+}
+
+/* font family */
+@font-face {
+  font-family: Poppins;
+  src: url("./../font/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./../font/Roboto/Roboto-Regular.ttf");
+}
+
+/* Global Variables */
+:root {
+  --green-color: #219554;
+  --yellow-color: #f2cb50;
+  --dark-color: #1a242d;
+  --red-color: #eb5757;
+  --off-background-color: #f6f7f9;
+}
+
+ul {
+  margin: 0px;
+}
+
+.container {
+  background: var(--off-background-color);
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  border-radius: 30px;
+}
+
+/* side bar */
+.container aside {
+  background: white;
+  width: 180px;
+  padding-top: 50px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 30px;
+}
+
+.container aside ul {
+  list-style: none;
+}
+
+.container aside ul li {
+  margin-top: 15px;
+  position: relative;
+  line-height: 40px;
+}
+
+.container aside ul li .highlight {
+  display: none;
+}
+
+.container aside ul li.active .highlight {
+  display: block;
+  background: var(--dark-color);
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  border-radius: 10px;
+}
+
+.container aside ul .highlight .arrow {
+  position: absolute;
+  width: 30px;
+  right: 0px;
+  top: 5px;
+}
+
+.container aside ul .menu-icon {
+  width: 25px;
+  position: relative;
+  top: 5px;
+  z-index: 10;
+}
+
+.container aside ul li.active .menu-icon {
+  filter: invert(100%);
+}
+
+.container aside ul li.active .text {
+  color: white;
+}
+
+.container aside ul .text {
+  position: relative;
+  z-index: 10;
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.container aside .logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container aside .logo img {
+  width: 100px;
+}
+
+/* Right Side */
+
+/* header */
+header {
+  width: 100%;
+  padding-top: 10px;
+  -webkit-app-region: drag;
+}
+
+header .controls {
+  width: fit-content;
+  margin-left: auto;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+header .controls img:first-child {
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+
+.cards .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding-left: 30px;
+  padding-top: 20px;
+}

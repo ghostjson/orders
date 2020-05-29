@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <link rel="stylesheet" href="./assets/libraries/css/simple-scrollbar.css">
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+
+    <title></title>
+  </head>
+  <body>
+    <main id="app">
+      <div class="container">
+        <aside>
+          <nav>
+            <ul>
+              <li class="active">
+                <div class="highlight">
+                  <img
+                    src="./assets/icons/right-arrow.svg"
+                    class="
+                  arrow"
+                  />
+                </div>
+                <object
+                  data="./assets/icons/home.svg"
+                  type="image/svg+xml"
+                  class="menu-icon"
+                ></object>
+                <a href="#" class="text">Dashboard</a>
+              </li>
+              <li>
+                <div class="highlight">
+                  <img
+                    src="./assets/icons/right-arrow.svg"
+                    class="
+                    arrow"
+                  />
+                </div>
+                <img src="./assets/icons/orders.svg" class="menu-icon" />
+                <a href="#" class="text">Orders</a>
+              </li>
+              <li>
+                <div class="highlight">
+                  <img
+                    src="./assets/icons/right-arrow.svg"
+                    class="
+                    arrow"
+                  />
+                </div>
+                <img src="./assets/icons/food.svg" class="menu-icon" />
+                <a href="#" class="text">Menu</a>
+              </li>
+              <li>
+                <div class="highlight">
+                  <img
+                    src="./assets/icons/right-arrow.svg"
+                    class="
+                    arrow"
+                  />
+                </div>
+                <img src="./assets/icons/invoice.svg" class="menu-icon" />
+                <a href="#" class="text">Invoice</a>
+              </li>
+              <li>
+                <div class="highlight">
+                  <img
+                    src="./assets/icons/right-arrow.svg"
+                    class="
+                    arrow"
+                  />
+                </div>
+                <img src="./assets/icons/history.svg" class="menu-icon" />
+                <a href="#" class="text">History</a>
+              </li>
+              <li>
+                <div class="highlight">
+                  <img
+                    src="./assets/icons/right-arrow.svg"
+                    class="
+                    arrow"
+                  />
+                </div>
+                <img src="./assets/icons/settings.svg" class="menu-icon" />
+                <a href="#" class="text">Settings</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="logo">
+            <img src="./assets/images/logo.png" />
+          </div>
+        </aside>
+
+        <div class="main">
+          <header>
+            <div class="controls">
+              <img v-on:click="minimize" src="./assets/icons/minimize.svg" width="20px">
+              <img v-on:click="close" src="./assets/icons/close.svg" width="20px">
+            </div>
+          </header>
+          <div class="cards">
+            <div class="row">
+                <money-card amount="15320.2" trend="5.32">Total Revenue</money-card>
+                <money-card amount="2451.02" trend="8.84">Profit</money-card>
+            </div>
+            <div class="row">
+              <recent-orders :data="recent_orders"></recent-orders>
+              <feedback ss-container></feedback>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Dependencies -->
+
+    <script src="./assets/libraries/js/vue.js"></script>
+    <script src="./assets/libraries/js/vue-router.js"></script>
+    <script src="./assets/libraries/js/currency.min.js"></script>
+    <script src="./assets/libraries/js/simple-scrollbar.min.js"></script>
+
+
+    <script src="./assets/js/components.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

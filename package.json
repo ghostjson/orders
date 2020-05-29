@@ -1,0 +1,33 @@
+{
+  "name": "orders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "win": {
+    "icon": "./resources/favicon/food-icon.png"
+  },
+  "author": "Akhil Ravindran",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0"
+  },
+  "dependencies": {
+    "electron-reload": "^1.5.0"
+  },
+  "build": {
+    "appId": "com.ghostjson.orders",
+    "productName": "Orders",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+    }
+  }
+}

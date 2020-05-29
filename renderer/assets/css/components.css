@@ -1,0 +1,224 @@
+/* Money Card */
+
+.money-card{
+    box-sizing: border-box;
+    background: white;
+    width: 380px;
+    padding: 15px;
+    padding-left: 20px;
+    position: relative;
+    border-radius: 10px;
+    color: var(--dark-color);
+}
+
+.money-card .title{
+    font-family: Poppins;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+}
+
+.money-card .currency{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    font-family: Poppins;
+}
+
+.money-card .currency div{
+    background: white;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    font-family: Roboto;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.money-card .currency div.active{
+    background: var(--dark-color);
+    color: white;
+}
+
+.money-card .amount{
+    font-size: 2.2em;
+    font-family: Roboto;
+    font-weight: bolder;
+    padding-left: 50px;
+}
+
+.money-card .trend span{
+    font-size: 1em;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+.money-card .trend span.positive{
+    color: var(--green-color);
+}
+
+.money-card .trend span.negative{
+    color: var(--red-color);
+}
+
+.money-card .trend span.flat{
+    color: var(--yellow-color);
+}
+
+.money-card .trend span img{
+    position: relative;
+    top: 7px;
+}
+
+
+/* recent orders */
+
+.recent-orders{
+    background: white;
+    width: 380px;
+    padding: 15px 0px;
+    position: relative;
+    border-radius: 10px;
+    color: var(--dark-color);
+    border: 1px solid rgba(223, 223, 223, 0.52);
+}
+
+.recent-orders .title{
+    font-family: Poppins;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.recent-orders .orders .order{
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    border: 1px solid rgba(223, 223, 223, 0.52);
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.recent-orders .orders .order div{
+    display: flex;
+    justify-content: center;
+}
+
+.recent-orders .orders .order .avatar{
+    padding: 15px;
+    
+}
+
+.recent-orders .orders .order .avatar img{
+    width: 30px;
+    border-radius: 100%;
+}
+
+.recent-orders .orders .order .description{
+    display: flex;
+    font-size: 1em;
+    font-family: Roboto;
+    justify-content: flex-start;
+}
+
+.recent-orders .orders .order .description .name{
+    padding-right: 20px;
+}
+
+.recent-orders .orders .order .description .dot{
+    font-weight: 600;
+}
+
+.recent-orders .orders .order .description .order-number{
+    font-size: 0.9em;
+}
+
+
+.recent-orders .orders .order .status p{
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: bolder;
+    font-family: Poppins;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    height: 25px;
+    margin-top: 18px;
+}
+
+
+.recent-orders .orders .order .status p.pending{
+    background: var(--yellow-color);
+}
+.recent-orders .orders .order .status p.cancelled{
+    background: var(--red-color);
+    color: white;
+}
+.recent-orders .orders .order .status p.completed{
+    background: var(--green-color);
+    color: white;   
+}
+
+
+/* feedback */
+
+.feedback-list{
+    background: white;
+    width: 380px;
+    box-sizing: border-box;
+    color: var(--dark-color);
+    font-size: 0.8em;
+    font-family: Roboto;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid rgba(223, 223, 223, 0.52);
+}
+
+.feedback-list .feedbacks{
+    height: 280px;
+    overflow-y: scroll;
+}
+
+.feedback-list .title{
+    font-family: Poppins;
+    font-size: 1.14em;
+    padding-bottom: 10px;
+    padding: 13px;
+}
+
+
+
+.feedback-list .avatar img{
+    width: 30px;
+    border-radius: 100%;
+}
+
+.feedback-list .feedbacks .feedback{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(223, 223, 223, 0.52);
+}
+
+.feedback-list .feedbacks .feedback .head-section{
+    display: flex;
+}
+
+.feedback-list .feedbacks .feedback .head-section{
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.feedback-list .feedbacks .feedback .head-section div:last-child{
+    margin-left: auto;
+}
+
+.feedback-list .feedbacks .feedback .description{
+    margin-top: 5px;
+    margin-left: 10px;
+}
