@@ -15,13 +15,13 @@ This app is build on top of electron js. Vuejs is used for frontend.
 
 ## Download Setup
 
-Use the below download link to download the application demo.
+Use the below download link to download the application demo:-
 
 [Download Setup](https://github.com/ghostjson/orders/raw/master/build/Orders%20Setup%201.0.0.exe)
 
 ## Build from source
 
-use the following commands to build the application from source.
+use the following commands to build the application from source:-
 
 ```
 npm install
